@@ -176,6 +176,14 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\advice.png" />
+    <Content Include="Content\Images\Bonnie.jpg" />
+    <Content Include="Content\Images\ConanAlbrect.jpg" />
+    <Content Include="Content\Images\decisions.png" />
+    <Content Include="Content\Images\handshake.png" />
+    <Content Include="Content\Images\question_mark.png" />
+    <Content Include="Content\Images\roads.png" />
+    <Content Include="Content\Images\tanner_building.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -231,11 +239,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Degree\Degree.cshtml" />
     <Content Include="Views\Degree\Degrees.cshtml" />
+    <Content Include="Views\About\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="DAL\" />
-    <Folder Include="Views\About\" />
     <Folder Include="Views\Contact\" />
   </ItemGroup>
   <ItemGroup>
