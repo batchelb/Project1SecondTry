@@ -1,0 +1,47 @@
+﻿body {
+}
+
+footer
+{
+    color: blue;
+}
+.professorinfoheader 
+{
+    font-size: 20px;
+    color: black;
+
+}
+
+.professorinfoinfo
+{
+    font-size: 20px;
+    color: black
+}
+
+.professorinfoimg
+{
+    max-width:300px;
+    float:left;
+    height:300px;
+    width: 100%;
+}
+
+.pagetitle
+{
+    font-size: 40px;
+    color:black;
+    font-family:Garamond;
+}
+
+.pagesubtitle
+{
+    font-size: 24px;
+    color:black;
+    font-family:Garamond;
+}
+
+.pagequestions
+{
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}

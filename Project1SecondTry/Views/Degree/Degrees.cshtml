@@ -1,0 +1,186 @@
+﻿
+@{
+ 
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">@Html.ActionLink("Home", "Index", "Home")</li>
+    <li class="breadcrumb-item">@Html.ActionLink("Degree Selection","Degree", "Degree")</li>
+    <li class="breadcrumb-item active">@ViewBag.DegreeName</li>
+</ol>
+<span class="pagetitle">@ViewBag.DegreeName</span>
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-3 col-xs-12">
+        <img src="@ViewBag.Img" alt="@ViewBag.DegreeCoor" class="professorinfoimg"/>
+        <br>
+        <span class="professorinfoheader">@ViewBag.DegreeCoor</span>
+    </div>
+    <br>
+    <div class="col-sm-9 col-xs-12">
+        <div class="professorinfoheader">
+            <div class="professorinfoinfo row">
+                <div class="col-sm-3 col-xs-12">
+                Title:                     
+                </div> 
+                <div class="col-sm-9 col-xs-12">
+                @ViewBag.Title
+                </div>
+            </div>
+           <br>
+             <div class="professorinfoinfo row">
+                <div class="col-sm-3">
+                    Office Address:
+                </div>
+                <div class="col-sm-9">
+                    @ViewBag.Office
+                </div>
+            </div>
+            <br>
+            <div class="professorinfoinfo row">
+                <div class="col-sm-3">
+                    PhD Education:
+                </div>
+                <div class="col-sm-9">
+                    @ViewBag.PhD
+                </div>
+            </div>
+            <br>
+            <div class="professorinfoinfo row">
+                <div class="col-sm-3">
+                    Master Education:
+                </div>
+                <div class="col-sm-9">
+                    @ViewBag.Masters
+                </div>
+            </div>
+            <br>
+            <div class="professorinfoinfo row">
+                <div class="col-sm-3">
+                    Bachelor Education:
+                </div>
+                <div class="col-sm-9">
+                    @ViewBag.Bachelors
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<p class="text-center"><span class="pagesubtitle"> Frequently Asked Question's</span></p>
+<hr>
+@using (Html.BeginForm("Form","Degree"))
+{
+    <div class="row">
+        <div class="col-xs-6">
+           <span class="professorinfoinfo">How many people are admitted every year to this program?</span><br>
+            <span>About @ViewBag.Admit! So be sure to keep your grades up!</span><br />
+        </div>
+        <div class="col-xs-2">
+            Post any answers here:
+        </div>
+        <div class="col-xs-3">
+            <fieldset>
+                <div>
+                    <textarea rows="6" cols="50" placeholder="Enter Answer Here..."></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-xs-1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button>Post</button>
+        </div>
+        </div>
+        }
+<hr>
+
+@using (Html.BeginForm("Form", "Degree"))
+{
+    <div class="row">
+        <div class="col-xs-6">
+            <span class="professorinfoinfo">Is this the best major?</span><br>
+            <span>Yes, Obviously!</span><br />
+        </div>
+        <div class="col-xs-2">
+            Post your answers here:
+        </div>
+        <div class="col-xs-3">
+            <fieldset>
+                <div>
+                    <textarea rows="6" cols="50" placeholder="Enter Answer Here..."></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-xs-1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button>Post</button>
+        </div>
+    </div>
+}
+
+<hr>
+
+@using (Html.BeginForm("Form", "Degree"))
+{
+    <div class="row">
+        <div class="col-xs-6">
+           <span class="professorinfoinfo">What are some of the key skills I will learn in this progam?</span><br>
+            <span>You will learn skills inluding web development, how to design a system, busines process and controls and many others!</span><br />
+        </div>
+        <div class="col-xs-2">
+            Post any answers here:
+        </div>
+        <div class="col-xs-3">
+            <fieldset>
+                <div>
+                    <textarea rows="6" cols="50" placeholder="Enter Answer Here..."></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-xs-1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button>Post</button>
+        </div>
+    </div>
+}
+<hr>
+<p class="text-center"><span class="pagesubtitle"> Add More Questions</span></p>
+<hr>
+<div class="row">
+    <div class="col-xs-6">
+        <span class="professorinfoinfo">Post any questions that cross your mind!</span><br/><span>We want to help everyone learn as much as possible about the information system major. </span>
+    </div>
+        <div class="col-xs-2">
+            Post new questions here:
+        </div>
+        <div class="col-xs-3">
+            <fieldset>
+                <div>
+                    <textarea rows="6" cols="100" placeholder="Enter Answer Here..."></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-xs-1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button>Post</button>
+        </div>
+</div>
+@Html.ActionLink("Post", "Index", null, new { @class = "btn btn-default"})

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Degree";
+}
+<div class="row">
+    <div class="col-xs-10">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Select a Degree
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li>@Html.ActionLink("Masters", "Degrees", "Degree", new { type = "Masters" }, null)</li>
+                <li>@Html.ActionLink("Bachelor", "Degrees", "Degree", new { type = "Bachelors" }, null)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
