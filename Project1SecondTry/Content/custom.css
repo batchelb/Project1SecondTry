@@ -11,6 +11,7 @@ navbar .navItems li a{
 navbar .navItems li a:hover{
     color:#dddddd!important;
     background-color:#426c96!important;
+    
 }
 
 .ISLogo{
@@ -18,7 +19,34 @@ navbar .navItems li a:hover{
     margin:3px
 }
 
+.jumbotron{
+    background-image:url("~/../Images/sideLibrary.jpg");
+    background-size:cover;
+    height:600px;
+    background-position:center center;
 
+}
+homepage .jumbotron h1{
+    text-align:center;
+    padding-top:80px;
+    font-size:100px;
+    color:#edf6ff;
+    text-shadow:#edf6ff 0px 0px 10px,
+        #001326 0px 0px 10px,
+        #0B386B 0px 0px 100px,
+        #0B386B 0px 0px 100px;
+}
+
+homepage .jumbotron h3{
+    text-align:center;
+    padding-top:0px;
+    font-size:50px;
+    color:#edf6ff;
+    text-shadow:#edf6ff 0px 0px 10px,
+        #001326 0px 0px 10px,
+        #0B386B 0px 0px 100px,
+        #0B386B 0px 0px 100px;
+}
 
 footer
 {
