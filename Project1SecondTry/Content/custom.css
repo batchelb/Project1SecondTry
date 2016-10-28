@@ -1,5 +1,21 @@
 ﻿body {
 }
+navbar .myNavBar{
+    background-color:#0B386B;
+}
+
+navbar .navItems li a{
+    color:white!important;
+}
+navbar .navItems li a:hover{
+    color:#dddddd!important;
+    background-color:#426c96!important;
+}
+
+ISLogo{
+    height:70px;
+}
+
 
 footer
 {
@@ -45,3 +61,4 @@ footer
     font-size: 20px;
     font-family: 'Times New Roman';
 }
+
