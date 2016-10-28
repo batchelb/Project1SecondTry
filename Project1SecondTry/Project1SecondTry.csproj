@@ -181,6 +181,7 @@
     <Content Include="Content\Images\ConanAlbrect.jpg" />
     <Content Include="Content\Images\decisions.png" />
     <Content Include="Content\Images\handshake.png" />
+    <Content Include="Content\Images\ISLogo.jpg" />
     <Content Include="Content\Images\question_mark.png" />
     <Content Include="Content\Images\roads.png" />
     <Content Include="Content\Images\tanner_building.png" />
