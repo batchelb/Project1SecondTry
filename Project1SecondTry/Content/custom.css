@@ -5,6 +5,15 @@
 a:hover{
         text-decoration:none!important;
 }
+a{
+    color:inherit;
+}
+a:hover{
+    color:inherit;
+}
+.nopadding{
+    padding:0px!important;
+}
 
 homepage nav a{
     color:white!important;
@@ -32,23 +41,28 @@ navbar .navItems li a{
     color:white!important;
     font-size:16px;
     padding:15px;
-    border-right: white solid 1px;
-    border-top-right-radius :0px;
+    border-right: #F9F9F9 solid 1px;
     border-bottom-right-radius:20px;
 }
 navbar .navItems li a:hover{
     color:white!important;
-    background-color:#426c96!important;
+    text-shadow: #F9F9F9 0px 0px 5px;
+    border-top:solid #F9F9F9 2px;
+    padding-top:13px;
+    padding-right:13px;
+        border-right: #F9F9F9 solid 3px;
+    border-bottom-right-radius:20px;
+    
 
     
 }
 
 .jumbotron button{
-    box-shadow: white 0px 0px 10px;
+    box-shadow: #F9F9F9 0px 0px 10px;
 }
 
 .jumbotron button:hover{
-    box-shadow: white 0px 0px 20px;
+    box-shadow: #F9F9F9 0px 0px 20px;
 }
 
 .ISLogo{
@@ -108,6 +122,128 @@ homepage .jumbotron h3{
         #0B386B 0px 0px 100px,
         #0B386B 0px 0px 100px,
         black 0px 0px 3px;
+}
+
+
+homepagecontent h2{
+    font-weight:bold;
+    color:#444444;
+    text-align:center;
+}
+
+homepagecontent h3{
+    text-align: center;
+    font-weight:lighter;
+    font-size:20px;
+}
+
+
+.JobProspects .FieldsButtonGroup{
+    margin: 10px 40px 30px 10px;
+
+}
+
+.JobProspects .FieldsButtonGroup .FieldButtonContainer{
+    padding: 10px 10px 10px 10px;
+}
+
+
+.JobProspects .FieldsButtonGroup .FieldButton{
+    text-align:center;
+    border:#ddd solid 2px;
+    Padding: 40px 0px 40px 0px;
+    font-family: 'Century Gothic';
+    font-size:16px;
+    font-weight:bold;
+    background-color:#edf6ff;
+}
+
+.JobProspects .FieldsButtonGroup .FieldButton:hover{
+    text-align:center;
+    border:#ddd solid 2px;
+    Padding: 40px 0px 40px 0px;
+    font-family: 'Century Gothic';
+    text-shadow:white 0px 0px 3px;
+    box-shadow: #0B386B 0px 0px 30px;
+}
+
+.JobProspects .FieldsButtonGroup .PM .FieldButton:hover{
+    background:radial-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255,.8),
+                                rgba(255, 255, 255,0), 
+                                rgba(255, 255, 255,0),  
+                                rgba(255, 255, 255,0)), 
+  url("~/../Images/jobs/projectmanagement.jpg");
+    background-size:cover;
+}
+.JobProspects .FieldsButtonGroup .WD .FieldButton:hover{
+    background:radial-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255,.8),
+                                rgba(255, 255, 255,0), 
+                                rgba(255, 255, 255,0),  
+                                rgba(255, 255, 255,0)), 
+          url("~/../Images/jobs/webdev.jpg");
+    background-size:cover;
+}
+.JobProspects .FieldsButtonGroup .SA .FieldButton:hover{
+    background:radial-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255,.8),
+                                rgba(255, 255, 255,0), 
+                                rgba(255, 255, 255,0),  
+                                rgba(255, 255, 255,0)), 
+url("~/../Images/jobs/security.jpg");
+    background-size:cover;
+    background-position:center bottom;
+}
+.JobProspects .FieldsButtonGroup .ITC .FieldButton:hover{
+    background:radial-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255,.8),
+                                rgba(255, 255, 255,0), 
+                                rgba(255, 255, 255,0),  
+                                rgba(255, 255, 255,0)), 
+url("~/../Images/jobs/itconsulting.jpg");
+    background-size:cover;
+    background-position:center bottom;
+}
+.JobProspects .FieldsButtonGroup .ITA .FieldButton:hover{
+    background:radial-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255,.8),
+                                rgba(255, 255, 255,0), 
+                                rgba(255, 255, 255,0),  
+                                rgba(255, 255, 255,0)), 
+url("~/../Images/jobs/itaudit.jpg");
+    background-size:cover;
+
+
+}
+.JobProspects .FieldsButtonGroup .MM .FieldButton:hover{
+    background:radial-gradient(rgba(255, 255, 255,1), rgba(255, 255, 255,.8),
+                                rgba(255, 255, 255,0), 
+                                rgba(255, 255, 255,0),  
+                                rgba(255, 255, 255,0)), 
+url("~/../Images/jobs/manymore.jpg");
+    background-size:cover;
+}
+
+
+homepagecontent .JobProspects .jobinfo{
+    background-image:url("~/../Images/jobs.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center top;
+    height:50vw;
+   margin-top:25px
+}
+
+.whyIS .video{
+padding-top:20px;
+
+}
+
+.whyIS{
+    text-align:center;
+    background-color:#0B386B;
+    padding-bottom:50px;
+    margin-top:40px
+}
+
+.whyIS h1{
+    color:#F9F9F9;
 }
 
 footer
