@@ -67,7 +67,7 @@ navbar .navItems li a:hover{
 }
 
 homepage .jumbotron .container{
-    text-align:center;
+    text-align:right;
 
 }
 
@@ -83,10 +83,11 @@ homepage .jumbotron hr{
     border-color:white;
     box-shadow:white 0px 0px 4px,
                 black 0px 0px 4px;
+    float:left;
 }
 
 homepage .jumbotron h1{
-    text-align:center;
+    text-align:left;
     font-size:10vw;
     color:#edf6ff;
     text-shadow:#edf6ff 0px 0px 10px,
@@ -97,7 +98,8 @@ homepage .jumbotron h1{
 }
 
 homepage .jumbotron h3{
-    text-align:center;
+    text-align:left;
+    margin-top:10px;
     padding-top:0px;
     font-size:4vw;
     color:#edf6ff;
