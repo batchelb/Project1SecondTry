@@ -1,51 +1,111 @@
 ﻿body {
-    background-color:#edf6ff;
+    background-color:#F9F9F9;
 }
+
+a:hover{
+        text-decoration:none!important;
+}
+
+homepage nav a{
+    color:white!important;
+}
+
+homepage .jumbotron a{
+    color:white!important;
+}
+
+homepage .jumbotron a:hover{
+    text-decoration:none!important;
+    color:white!important;
+}
+
+homepage nav a:hover{
+    color:white!important;
+}
+
 navbar .myNavBar{
     background-color:#0B386B;
+    border-bottom:none;
 }
 
 navbar .navItems li a{
     color:white!important;
+    font-size:16px;
+    padding:15px;
+    border-right: white solid 1px;
+    border-top-right-radius :0px;
+    border-bottom-right-radius:20px;
 }
 navbar .navItems li a:hover{
-    color:#dddddd!important;
+    color:white!important;
     background-color:#426c96!important;
+
     
 }
 
+.jumbotron button{
+    box-shadow: white 0px 0px 10px;
+}
+
+.jumbotron button:hover{
+    box-shadow: white 0px 0px 20px;
+}
+
 .ISLogo{
-    height:44px;
+    height:45px;
     margin:3px
 }
 
 .jumbotron{
     background-image:url("~/../Images/sideLibrary.jpg");
     background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
     height:600px;
-    background-position:center center;
+    background-position:left center;
 
 }
+
+homepage .jumbotron .container{
+    text-align:center;
+
+}
+
+.vertical-center{
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+homepage .jumbotron hr{
+    border-width:3px;
+    border-color:white;
+    box-shadow:white 0px 0px 4px,
+                black 0px 0px 4px;
+}
+
 homepage .jumbotron h1{
     text-align:center;
-    padding-top:80px;
-    font-size:100px;
+    font-size:10vw;
     color:#edf6ff;
     text-shadow:#edf6ff 0px 0px 10px,
         #001326 0px 0px 10px,
         #0B386B 0px 0px 100px,
-        #0B386B 0px 0px 100px;
+        #0B386B 0px 0px 100px,
+        black 0px 0px 3px;
 }
 
 homepage .jumbotron h3{
     text-align:center;
     padding-top:0px;
-    font-size:50px;
+    font-size:4vw;
     color:#edf6ff;
     text-shadow:#edf6ff 0px 0px 10px,
         #001326 0px 0px 10px,
         #0B386B 0px 0px 100px,
-        #0B386B 0px 0px 100px;
+        #0B386B 0px 0px 100px,
+        black 0px 0px 3px;
 }
 
 footer

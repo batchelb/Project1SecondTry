@@ -3,16 +3,38 @@
     ViewBag.Title = "Index";
 }
 
+
+
 <homepage>
     <div class=" container-fluid">
         <div class=" row">
             <div class=" col-xs-12">
-                <div class=" jumbotron">
-                    <h1>BYU Information Systems</h1>
-                    <h3>Where Technology Meets Business</h3>
+                <div class="text-center jumbotron vertical-center">
+                    <div class="container">
+                        <div class=" row">
+                            <div class=" col-xs-12">
+                                <h1>BYU Information Systems</h1>
+                                <hr width="50%"/>
+                                <h3>Where Technology Meets Business</h3>
+                                <br />
+                                <button class=" btn-lg btn-primary" onclick="" id="link" href="#">
+                                   @Html.ActionLink( "Find Out More!",// linkText 
+                                                            "FindOutMore",// actionName 
+                                                            "Home" //controller
+                                                            ) 
+                                </button>
+                                
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <hr />
+
+
+    <a name="FindOutMore"></a>the content should be focus here
 
 </homepage>

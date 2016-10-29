@@ -13,5 +13,11 @@ namespace Project1.Controllers
         {
             return View();
         }
+
+        public ActionResult FindOutMore()
+        {
+            return new RedirectResult(Url.Action("Index", "Home") + "#FindOutMore");
+        }
+
     }
 }
