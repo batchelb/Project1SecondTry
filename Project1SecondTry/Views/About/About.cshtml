@@ -10,7 +10,7 @@
     ViewBag.Title = "About";
 }
 
-<h2>About Us</h2>
+<h2 style="font-family:Britannic">About Us</h2>
 <div class="container-fluid">
 
     <div class="row">
@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="well" style="font-family:Britannic">
+            <div class="well" style="font-family:Britannic;height:480px">
                 <p style="font-size:14pt">We want you to succeed!</p>
                 <p>Our goal is to help you learn about the Information Systems field and decide if it's right for you. If any of the following applies to you, IS might be for you!</p>
                 <ul>
@@ -78,13 +78,13 @@
                     <li>I'm interested in improving business processes</li>
                 </ul>
                 <p>If any of those applied to you, this web-site is for you! Use the resources here to learn more about Information Systems. You can read frequently asked questions and ask your own questions, which will be answered by current IS students. </p>
-                <br />
+                
             </div>
         </div>
     </div>
     <div class="row">
-        <h3 style="float:right">Find Us</h3>
-        <div class="col-md-6 col-md-offset-6">
+        <div class="col-md-6 col-md-offset-3">
+            <p align="center" style="font-family:Britannic;font-size:18pt">Find Us</p>
             <div id="map"></div>
         </div>
     </div>
@@ -111,7 +111,7 @@
                 };
 
                 infoWindow.setPosition(pos);
-                infoWindow.setContent('Location found.');
+                infoWindow.setContent('Your location');
                 map.setCenter(pos);
             }, function () {
                 handleLocationError(true, infoWindow, map.getCenter());
