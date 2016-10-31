@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Project1SecondTry.DAL;
+using Project1SecondTry.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,14 +10,17 @@ namespace Project1.Controllers
 {
     public class DegreeController : Controller
     {
+        private Project1Context db = new Project1Context();
         // GET: Degree
         public ActionResult Degree()
         {
             return View();
         }
 
-        public ActionResult Degrees(string type) 
+        public ActionResult Degrees(Project1Context filtercontext,string type) 
         {
+ 
+           
             ViewBag.Type = type;
             ViewBag.Form = "<div class=\"row\"> <div class=\"col-xs-2\">Post any questions here:</div><div class=\"col-xs-3\"><fieldset><div><textarea rows=\"6\" cols=\"50\">Enter Question...</textarea></div></fieldset></div><div class=\"col-xs-1\"><br><br><br><br><br><button>Post</button></div><div class=\"col-xs-2\">Post any answers here:</div><div class=\"col-xs-3\"><fieldset><div><textarea rows=\"6\" cols=\"50\">Enter Answer...</textarea></div></fieldset></div><div class=\"col-xs-1\"><br><br><br><br><br><button>Post</button></div>";
             if(type.Equals("Masters"))
@@ -45,7 +50,22 @@ namespace Project1.Controllers
                 ViewBag.Img = Url.Content("../../Content/ConanAlbrect.jpg");
             }
 
-            return View();
+            return View(db.Responses.ToList());
+            }
+
+        [HttpPost]
+        public ActionResult Create(int ResponseId, string Response, string QuestionId )
+        {
+            
+            Response response = new Response();
+            response.ResponseId = 3;
+            response.Responses = "Super";
+            response.QuestionId = "1";
+            db.Responses.Add(response);
+            db.SaveChanges();
+            return View("Degree");
         }
     }
+
+    
 }
