@@ -1,7 +1,10 @@
-﻿
+﻿@model IEnumerable<Project1SecondTry.Models.Response>
+
 @{
  
 }
+<div class="container body-content">
+
 
 <ol class="breadcrumb">
     <li class="breadcrumb-item">@Html.ActionLink("Home", "Index", "Home")</li>
@@ -68,16 +71,25 @@
     </div>
 </div>
 <br>
+<br>
 <hr>
 <p class="text-center"><span class="pagesubtitle"> Frequently Asked Question's</span></p>
 <hr>
-@using (Html.BeginForm("Form","Degree"))
-{
+    <br>
     <div class="row">
         <div class="col-xs-6">
            <span class="professorinfoinfo">How many people are admitted every year to this program?</span><br>
+            <br>
             <span>About @ViewBag.Admit! So be sure to keep your grades up!</span><br />
-        </div>
+            
+        @foreach (var item in Model)
+        {
+            <br>
+            @Html.DisplayFor(modelItem => item.Responses)
+            <br>
+
+        }
+         </div>
         <div class="col-xs-2">
             Post any answers here:
         </div>
@@ -97,11 +109,18 @@
             <button>Post</button>
         </div>
         </div>
-        }
+       <div>
+           @foreach (var item in Model)
+           {
+
+               @Html.DisplayFor(modelItem => item.Responses)
+                 <br>
+
+           }
+           <br>
+       </div>
 <hr>
 
-@using (Html.BeginForm("Form", "Degree"))
-{
     <div class="row">
         <div class="col-xs-6">
             <span class="professorinfoinfo">Is this the best major?</span><br>
@@ -126,12 +145,10 @@
             <button>Post</button>
         </div>
     </div>
-}
+
 
 <hr>
 
-@using (Html.BeginForm("Form", "Degree"))
-{
     <div class="row">
         <div class="col-xs-6">
            <span class="professorinfoinfo">What are some of the key skills I will learn in this progam?</span><br>
@@ -153,10 +170,10 @@
             <br>
             <br>
             <br>
-            <button>Post</button>
+            @Html.ActionLink("Post", "Create", new { ResponseId = "1", Response ="Doubleawesome", QuestionId ="1"  }, new { @class = "btn btn-default" })
         </div>
     </div>
-}
+
 <hr>
 <p class="text-center"><span class="pagesubtitle"> Add More Questions</span></p>
 <hr>
@@ -183,4 +200,4 @@
             <button>Post</button>
         </div>
 </div>
-@Html.ActionLink("Post", "Index", null, new { @class = "btn btn-default"})
+    </div>
