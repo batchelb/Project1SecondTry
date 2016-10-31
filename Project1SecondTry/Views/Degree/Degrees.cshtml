@@ -106,7 +106,7 @@
             <br>
             <br>
             <br>
-            <button>Post</button>
+            @Html.ActionLink("Post", "Degrees", null, new { @class = "btn btn-default" })
         </div>
         </div>
        <div>
@@ -142,7 +142,7 @@
             <br>
             <br>
             <br>
-            <button>Post</button>
+            @Html.ActionLink("Post", "Degrees", null, new { @class = "btn btn-default" })
         </div>
     </div>
 
@@ -170,7 +170,7 @@
             <br>
             <br>
             <br>
-            @Html.ActionLink("Post", "Create", new { ResponseId = "1", Response ="Doubleawesome", QuestionId ="1"  }, new { @class = "btn btn-default" })
+            @Html.ActionLink("Post", "Degrees", null , new { @class = "btn btn-default" })
         </div>
     </div>
 
@@ -197,7 +197,7 @@
             <br>
             <br>
             <br>
-            <button>Post</button>
+            @Html.ActionLink("Post", "Degrees", new { Type = ViewBag.Type}, new { @class = "btn btn-default" })
         </div>
 </div>
     </div>
