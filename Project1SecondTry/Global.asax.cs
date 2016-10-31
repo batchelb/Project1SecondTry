@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Data.Entity;
+using Project1SecondTry.Models;
+using Project1SecondTry.DAL;
 
 namespace Project1SecondTry
 {
@@ -12,6 +15,7 @@ namespace Project1SecondTry
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<Project1Context>(null);
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

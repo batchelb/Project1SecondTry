@@ -4,13 +4,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace Project1.Models
+namespace Project1SecondTry.Models
 {
+    [Table("Question")]
     public class Question
     {
-        [Table("Question")]
-        public String QuestionId { get; set; }
-        public int Questions { get; set; }
+        
+        public int QuestionId { get; set; }
+        public String Questions { get; set; }
 
     }
 }
