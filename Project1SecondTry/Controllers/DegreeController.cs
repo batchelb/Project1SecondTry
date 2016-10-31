@@ -33,7 +33,7 @@ namespace Project1.Controllers
                 ViewBag.Masters = "MAcc, Information Systems, Brigham Young University, 1995";
                 ViewBag.Bachelors = "BS, Accounting, Brigham Young University, 1995";
                 ViewBag.Admit = "60";
-                ViewBag.Img = Url.Content("../../Content/Bonnie.jpg");
+                ViewBag.Img = Url.Content("../../Content/Images/Bonnie.jpg");
 
             }
 
@@ -43,11 +43,11 @@ namespace Project1.Controllers
                 ViewBag.DegreeCoor = "Dr. Conan Albrecht";
                 ViewBag.Title = "Doctor";
                 ViewBag.Office = "780 TNRB";
-                ViewBag.PhD = "A university";
-                ViewBag.Masters = "A universey";
-                ViewBag.Bachelors = "A universey";
+                ViewBag.PhD = "HardKnox University";
+                ViewBag.Masters = "Brigham Young University";
+                ViewBag.Bachelors = "Brigham Young University";
                 ViewBag.Admit = "120";
-                ViewBag.Img = Url.Content("../../Content/ConanAlbrect.jpg");
+                ViewBag.Img = Url.Content("../../Content/Images/ConanAlbrect.jpg");
             }
 
             return View(db.Responses.ToList());

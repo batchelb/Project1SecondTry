@@ -79,16 +79,10 @@
     <div class="row">
         <div class="col-xs-6">
            <span class="professorinfoinfo">How many people are admitted every year to this program?</span><br>
-            <br>
+            
             <span>About @ViewBag.Admit! So be sure to keep your grades up!</span><br />
             
-        @foreach (var item in Model)
-        {
-            <br>
-            @Html.DisplayFor(modelItem => item.Responses)
-            <br>
-
-        }
+        
          </div>
         <div class="col-xs-2">
             Post any answers here:
@@ -106,25 +100,24 @@
             <br>
             <br>
             <br>
-            @Html.ActionLink("Post", "Degrees", null, new { @class = "btn btn-default" })
+            @Html.ActionLink("Post", "Degrees", new { type = ViewBag.Type }, new { @class = "btn btn-default" })
         </div>
         </div>
        <div>
-           @foreach (var item in Model)
-           {
-
-               @Html.DisplayFor(modelItem => item.Responses)
-                 <br>
-
-           }
-           <br>
+           
        </div>
 <hr>
 
     <div class="row">
         <div class="col-xs-6">
             <span class="professorinfoinfo">Is this the best major?</span><br>
-            <span>Yes, Obviously!</span><br />
+            @foreach (var item in Model)
+            {
+                
+                @Html.DisplayFor(modelItem => item.Responses)
+                <br>
+
+            }
         </div>
         <div class="col-xs-2">
             Post your answers here:
@@ -142,7 +135,7 @@
             <br>
             <br>
             <br>
-            @Html.ActionLink("Post", "Degrees", null, new { @class = "btn btn-default" })
+            @Html.ActionLink("Post", "Degrees", new { type = ViewBag.Type }, new { @class = "btn btn-default" })
         </div>
     </div>
 
@@ -170,7 +163,7 @@
             <br>
             <br>
             <br>
-            @Html.ActionLink("Post", "Degrees", null , new { @class = "btn btn-default" })
+            @Html.ActionLink("Post", "Degrees", new { type = ViewBag.Type}, new { @class = "btn btn-default" })
         </div>
     </div>
 
