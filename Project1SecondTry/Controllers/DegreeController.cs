@@ -11,14 +11,14 @@ namespace Project1.Controllers
 {
     public class DegreeController : Controller
     {
-        private Project1Context db = new Project1Context();
+        private Project2Context db = new Project2Context();
         // GET: Degree
         public ActionResult Degree()
         {
             return View();
         }
 
-        public ActionResult Degrees(Project1Context filtercontext, string type)
+        public ActionResult Degrees(Project2Context filtercontext, string type)
         {
 
 
@@ -51,21 +51,21 @@ namespace Project1.Controllers
                 ViewBag.Img = Url.Content("../../Content/Images/ConanAlbrect.jpg");
             }
 
-            return View(db.Responses.ToList());
+            return View();
         }
 
-        [HttpPost]
-        public ActionResult Create(int ResponseId, string Response, string QuestionId)
-        {
+        //[HttpPost]
+        //public ActionResult Create(int ResponseId, string Response, string QuestionId)
+        //{
 
-            Response response = new Response();
-            response.ResponseId = 3;
-            response.Responses = "Super";
-            response.QuestionId = "1";
-            db.Responses.Add(response);
-            db.SaveChanges();
-            return View("Degree");
-        }
+        //    Response response = new Response();
+        //    response.ResponseId = 3;
+        //    response.Responses = "Super";
+        //    response.QuestionId = "1";
+        //    db.Responses.Add(response);
+        //    db.SaveChanges();
+        //    return View("Degree");
+        //}
     }
 }
 

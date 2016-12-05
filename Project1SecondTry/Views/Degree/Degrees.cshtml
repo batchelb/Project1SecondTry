@@ -1,9 +1,5 @@
 
-﻿@model IEnumerable<Project1SecondTry.Models.Response>
-
-@{
- 
-}
+﻿
 <div class="container body-content">
 
 
@@ -112,13 +108,7 @@
     <div class="row">
         <div class="col-xs-6">
             <span class="professorinfoinfo">Is this the best major?</span><br>
-            @foreach (var item in Model)
-            {
-                
-                @Html.DisplayFor(modelItem => item.Responses)
-                <br>
-
-            }
+            
         </div>
         <div class="col-xs-2">
             Post your answers here:

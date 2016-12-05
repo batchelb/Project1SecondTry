@@ -15,7 +15,7 @@ namespace Project1SecondTry
     {
         protected void Application_Start()
         {
-            Database.SetInitializer<Project1Context>(null);
+            Database.SetInitializer<Project2Context>(null);
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
